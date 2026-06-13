@@ -243,7 +243,7 @@ function App() {
         
         {/* Pixel Oda Görseli */}
         <img 
-          src={`${import.meta.env.BASE_URL}pixelroom.jpg`}
+          src={process.env.PUBLIC_URL + '/pixelroom.jpg'}
           alt="Pixel Oda" 
           style={{ maxWidth: '100%', maxHeight: '75vh', objectFit: 'contain', display: 'block' }}
         />

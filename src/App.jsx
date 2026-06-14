@@ -100,7 +100,7 @@ function App() {
                   {ev.img.map((image, idx) => (
                     <img 
                       key={idx} 
-                      src={process.env.PUBLIC_URL + '/' + image}
+                      src={import.meta.env.BASE_URL + image}
                       alt="Etkinlik" 
                       style={{ width: '100%', borderRadius: '2px', border: '1px solid #2d3748', display: 'block' }} 
                     />
@@ -243,7 +243,7 @@ function App() {
         
         {/* Pixel Oda Görseli */}
         <img 
-          src={process.env.PUBLIC_URL + '/pixelroom.jpg'}
+          src={import.meta.env.BASE_URL + 'pixelroom.jpg'}
           alt="Pixel Oda" 
           style={{ maxWidth: '100%', maxHeight: '75vh', objectFit: 'contain', display: 'block' }}
         />
